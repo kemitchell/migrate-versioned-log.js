@@ -42,14 +42,19 @@ var migrate = require('migrate-versioned-log')
 var pump = require('pump')
 
 var log = [
+  // A 1.0.0 set operation.
   {index: 1, version: '1.0.0', entry: {key: 'a', value: 1}},
+  // From version 2.0.0, set operations are logged with two entries:
+  // One to initialize. One to set.
   {index: 2, version: '2.0.0', entry: {type: 'init', key: 'b'}},
   {index: 3, version: '2.0.0', entry: {type: 'set', key: 'b', value: 2}}
 ]
 
 var migrated = [
+  // The old 1.0.0 entry is migrated to two 2.0.0 entries.
   {index: 1, version: '2.0.0', entry: {type: 'init', key: 'a'}},
   {index: 1, version: '2.0.0', entry: {type: 'set', key: 'a', value: 1}},
+  // The 2.0.0 entries remain the same.
   {index: 2, version: '2.0.0', entry: {type: 'init', key: 'b'}},
   {index: 3, version: '2.0.0', entry: {type: 'set', key: 'b', value: 2}}
 ]
