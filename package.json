@@ -18,6 +18,9 @@
     "replace-require-self": "^1.1.1",
     "standard": "^7.1.2"
   },
+  "files": [
+    "index.js"
+  ],
   "license": "MIT",
   "repository": "kemitchell/migrate-versioned-log.js",
   "scripts": {
