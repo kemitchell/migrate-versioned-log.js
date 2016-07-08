@@ -1,0 +1,27 @@
+{
+  "name": "migrate-versioned-log",
+  "version": "0.0.0",
+  "description": "transform semantically versioned append-only log entries",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/migrate-versioned-log.js",
+  "license": "MIT",
+  "devDependencies": {
+    "collect-stream": "^1.1.1",
+    "defence-cli": "^2.0.0",
+    "from2-array": "0.0.4",
+    "pump": "^1.0.1",
+    "replace-require-self": "^1.1.1",
+    "standard": "^7.1.2"
+  },
+  "dependencies": {
+    "array-find": "^1.0.0",
+    "async.map": "^0.5.2",
+    "dezalgo": "^1.0.3",
+    "semver": "^5.2.0",
+    "through2": "^2.0.1"
+  },
+  "scripts": {
+    "test": "defence README.md | replace-require-self | node",
+    "lint": "standard"
+  }
+}
