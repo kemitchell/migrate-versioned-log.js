@@ -21,7 +21,7 @@
     "through2": "^2.0.1"
   },
   "scripts": {
-    "test": "defence README.md | replace-require-self | node",
+    "test": "defence --info javascript README.md | replace-require-self | node",
     "lint": "standard"
   }
 }
