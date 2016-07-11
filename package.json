@@ -21,6 +21,15 @@
   "files": [
     "index.js"
   ],
+  "keywords": [
+    "SemVer",
+    "TCP",
+    "client",
+    "database",
+    "kappa",
+    "log",
+    "version"
+  ],
   "license": "MIT",
   "repository": "kemitchell/migrate-versioned-log.js",
   "scripts": {
