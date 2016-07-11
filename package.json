@@ -1,7 +1,7 @@
 {
   "name": "migrate-versioned-log",
   "description": "transform semantically versioned append-only log entries",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "array-find": "^1.0.0",
